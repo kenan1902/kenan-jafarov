@@ -23,10 +23,6 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
-  scroll-snap-align: center;
-}
-
 body {
   background-color: var(--background-color);
   display: flex;
@@ -100,6 +96,12 @@ p {
 
   .sectionTitle {
     margin-bottom: 60px;
+  }
+
+  @media (width >= 1024px) {
+    section {
+      scroll-snap-align: center;
+    }
   }
 
   @media (width >= 1400px) {
