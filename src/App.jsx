@@ -26,7 +26,7 @@ function App() {
           style: {
             fontFamily: "Roboto Mono",
             fontSize: "15px",
-            maxWidth: "300px",
+            width: "50%",
             padding: "16px 24px",
             backgroundColor: "#fff",
             color: "#374151",
