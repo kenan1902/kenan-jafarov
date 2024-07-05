@@ -1,13 +1,12 @@
 import styles from "./ContactStyles.module.css";
 import { motion } from "framer-motion";
 import { TextAnimation, CustomAnimation } from "../../variants.js";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from 'react-hot-toast';
 
 function Contact() {
   const formRef = useRef(null);
-  const [buttonText, setButtonText] = useState("Submit");
-  const [buttonStyle, setButtonStyle] = useState({});
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -21,21 +20,11 @@ function Contact() {
       )
       .then(() => {
         formRef.current.reset();
-        setButtonText("Sent!");
-        setButtonStyle({ backgroundColor: "green", color: "white" });
-        setTimeout(() => {
-          setButtonText("Submit");
-          setButtonStyle({});
-        }, 3000);
+        toast.success('Email sent successfully!');
       })
       .catch((error) => {
         console.error("Error sending email:", error);
-        setButtonText("Failed!");
-        setButtonStyle({ backgroundColor: "red", color: "white" });
-        setTimeout(() => {
-          setButtonText("Submit");
-          setButtonStyle({});
-        }, 3000);
+        toast.error('Failed to send email!');
       });
   };
 
@@ -97,8 +86,7 @@ function Contact() {
         <motion.input
           className="hover btn"
           type="submit"
-          value={buttonText}
-          style={buttonStyle}
+          value="Submit"
           variants={CustomAnimation("toUp", 0.3)}
           initial="initial"
           whileInView="animate"
