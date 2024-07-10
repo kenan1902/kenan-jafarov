@@ -25,7 +25,7 @@ function Projects() {
       >
         <ProjectCard
           src={soon}
-          link="https://github.com/kenan1902"
+          link="https://github.com/kenan1902/kj-cabins"
           h3="New Project"
           p="Coming Soon"
         />
