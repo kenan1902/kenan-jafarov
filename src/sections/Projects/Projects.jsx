@@ -2,6 +2,7 @@ import styles from "./ProjectsStyles.module.css";
 import ProjectCard from "../../common/ProjectCard";
 import { motion } from "framer-motion";
 import { TextAnimation, CustomAnimation } from "../../variants.js";
+import soon from "../../assets/soon.png";
 import kjCabins from "../../assets/kj-logo-light.png";
 
 function Projects() {
@@ -28,6 +29,12 @@ function Projects() {
           link="https://github.com/kenan1902/kj-cabins"
           h3="KJ Cabins"
           p="Cabin Management App"
+        />
+        <ProjectCard
+          src={soon}
+          link="https://github.com/kenan1902/"
+          h3="New Project"
+          p="Coming Soon"
         />
       </motion.div>
     </section>
