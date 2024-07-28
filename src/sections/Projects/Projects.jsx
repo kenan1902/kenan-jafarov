@@ -2,7 +2,7 @@ import styles from "./ProjectsStyles.module.css";
 import ProjectCard from "../../common/ProjectCard";
 import { motion } from "framer-motion";
 import { TextAnimation, CustomAnimation } from "../../variants.js";
-import soon from "../../assets/soon.png";
+import kjCabins from "../../assets/kj-logo-light.png";
 
 function Projects() {
   return (
@@ -24,10 +24,10 @@ function Projects() {
         viewport={{ once: false }}
       >
         <ProjectCard
-          src={soon}
+          src={kjCabins}
           link="https://github.com/kenan1902/kj-cabins"
-          h3="New Project"
-          p="Coming Soon"
+          h3="KJ Cabins"
+          p="Cabin Management App"
         />
       </motion.div>
     </section>
