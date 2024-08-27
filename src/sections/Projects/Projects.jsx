@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { TextAnimation, CustomAnimation } from "../../variants.js";
 import soon from "../../assets/soon.png";
 import kjCabins from "../../assets/kj-logo-light.png";
-import alinaLee from "../../assets/alinalee.svg";
+import alinaLee from "../../assets/alinalee.png";
 
 function Projects() {
   return (
@@ -27,7 +27,7 @@ function Projects() {
       >
         <ProjectCard
           src={kjCabins}
-          link="https://kjcabins.netlify.app/login"
+          link="https://kjcabins.netlify.app/"
           h3="KJ Cabins"
           p="Cabin Management App"
         />
