@@ -5,6 +5,7 @@ import { TextAnimation, CustomAnimation } from "../../variants.js";
 import soon from "../../assets/soon.png";
 import kjCabins from "../../assets/kj-logo-light.png";
 import alinaLee from "../../assets/alinalee.png";
+import kjShop from "../../assets/kjshop-logo.png";
 
 function Projects() {
   return (
@@ -36,6 +37,12 @@ function Projects() {
           link="https://alinalee.netlify.app/"
           h3="Alina Lee"
           p="Photographer Portfolio"
+        />
+        <ProjectCard
+          src={kjShop}
+          link="https://thekjshop.netlify.app/"
+          h3="KJ Shop"
+          p="E-Commerce"
         />
         <ProjectCard
           src={soon}
