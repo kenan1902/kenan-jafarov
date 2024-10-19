@@ -6,6 +6,7 @@ import soon from "../../assets/soon.png";
 import kjCabins from "../../assets/kj-logo-light.png";
 import alinaLee from "../../assets/alinalee.png";
 import kjShop from "../../assets/kjshop-logo.png";
+import aytenHuseynli from "../../assets/aytenhuseynlilogo.png";
 
 function Projects() {
   return (
@@ -27,6 +28,18 @@ function Projects() {
         viewport={{ once: false }}
       >
         <ProjectCard
+          src={aytenHuseynli}
+          link="https://aytenhuseynli.netlify.app/"
+          h3="Ayten Huseynli"
+          p="Photographer Portfolio"
+        />
+        <ProjectCard
+          src={kjShop}
+          link="https://thekjshop.netlify.app/"
+          h3="KJ Shop"
+          p="E-Commerce"
+        />
+        <ProjectCard
           src={kjCabins}
           link="https://kjcabins.netlify.app/"
           h3="KJ Cabins"
@@ -37,12 +50,6 @@ function Projects() {
           link="https://alinalee.netlify.app/"
           h3="Alina Lee"
           p="Photographer Portfolio"
-        />
-        <ProjectCard
-          src={kjShop}
-          link="https://thekjshop.netlify.app/"
-          h3="KJ Shop"
-          p="E-Commerce"
         />
         <ProjectCard
           src={soon}
