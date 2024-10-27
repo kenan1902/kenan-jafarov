@@ -2,11 +2,11 @@ import styles from "./ProjectsStyles.module.css";
 import ProjectCard from "../../common/ProjectCard";
 import { motion } from "framer-motion";
 import { TextAnimation, CustomAnimation } from "../../variants.js";
-import soon from "../../assets/soon.png";
 import kjCabins from "../../assets/kj-logo-light.png";
 import alinaLee from "../../assets/alinalee.png";
 import kjShop from "../../assets/kjshop-logo.png";
 import aytenHuseynli from "../../assets/aytenhuseynlilogo.png";
+import cventures from "../../assets/cventures.png";
 
 function Projects() {
   return (
@@ -28,10 +28,16 @@ function Projects() {
         viewport={{ once: false }}
       >
         <ProjectCard
+          src={cventures}
+          link="https://www.continuous.vc/"
+          h3="Continuous Ventures"
+          p="Business"
+        />
+        <ProjectCard
           src={aytenHuseynli}
           link="https://aytenhuseynli.netlify.app/"
           h3="Ayten Huseynli"
-          p="Photographer Portfolio"
+          p="Portfolio"
         />
         <ProjectCard
           src={kjShop}
@@ -43,19 +49,13 @@ function Projects() {
           src={kjCabins}
           link="https://kjcabins.netlify.app/"
           h3="KJ Cabins"
-          p="Cabin Management App"
+          p="Cabin Management"
         />
         <ProjectCard
           src={alinaLee}
           link="https://alinalee.netlify.app/"
           h3="Alina Lee"
-          p="Photographer Portfolio"
-        />
-        <ProjectCard
-          src={soon}
-          link="https://github.com/kenan1902/"
-          h3="New Project"
-          p="Coming Soon"
+          p="Portfolio"
         />
       </motion.div>
     </section>
