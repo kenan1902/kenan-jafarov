@@ -70,6 +70,7 @@ function Skills() {
         <SkillList src={checkMarkIcon} skill="React" />
         <SkillList src={checkMarkIcon} skill="jQuery" />
         <SkillList src={checkMarkIcon} skill="Bootstrap" />
+        <SkillList src={checkMarkIcon} skill="Tailwind" />
         <SkillList src={checkMarkIcon} skill="Redux" />
         <SkillList src={checkMarkIcon} skill="Git" />
         <SkillList src={checkMarkIcon} skill="Playwright" />
